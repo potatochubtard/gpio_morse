@@ -40,7 +40,7 @@ def transmitword(data, pin):
         sleep(0.01)
 
 def main(text, pin, mode):
-    setup(args.pin)
+    setup(pin, mode)
     cipher = text.split(" ")
     for word in cipher:
         transmitword(text2morse(word), pin)
